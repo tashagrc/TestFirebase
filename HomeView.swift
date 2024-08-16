@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct HomeView: View {
+    @Binding var appUser: AppUser?
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Home")
+        if let appUser = appUser {
+            VStack {
+                Text(appUser.uid)
+                Text(appUser.email ?? "No email")
+            }
+        }
+        
+        
     }
 }
 
-#Preview {
-    HomeView()
-}
+//#Preview {
+//    HomeView(appUser: .constant("jason"))
+//}

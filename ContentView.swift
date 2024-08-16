@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             if let appUser = appUser {
-                HomeView(appUser: appUser)
+                HomeView(appUser: $appUser)
             } else {
                 SignInView(appUser: $appUser)
             }
@@ -22,8 +22,12 @@ struct ContentView: View {
         .onAppear {
             Task {
                 self.appUser = try await AuthManager.shared.getCurrentSession()
+                print("ambil get current session")
+                print(self.appUser ?? "app user ga ada di content view")
             }
         }
+        
+        
 
             
     }

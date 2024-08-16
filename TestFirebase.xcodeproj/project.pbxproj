@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A31FFD162C6DC2D3006BD8C5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FFD152C6DC2D3006BD8C5 /* HomeView.swift */; };
 		A32E433E2C6C8D6000A9D2BC /* TestFirebaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E433D2C6C8D6000A9D2BC /* TestFirebaseApp.swift */; };
-		A32E43402C6C8D6000A9D2BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E433F2C6C8D6000A9D2BC /* ContentView.swift */; };
 		A32E43422C6C8D6100A9D2BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32E43412C6C8D6100A9D2BC /* Assets.xcassets */; };
 		A32E43452C6C8D6100A9D2BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32E43442C6C8D6100A9D2BC /* Preview Assets.xcassets */; };
 		A32E434F2C6C8D6100A9D2BC /* TestFirebaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E434E2C6C8D6100A9D2BC /* TestFirebaseTests.swift */; };
 		A32E43592C6C8D6100A9D2BC /* TestFirebaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E43582C6C8D6100A9D2BC /* TestFirebaseUITests.swift */; };
 		A32E435B2C6C8D6100A9D2BC /* TestFirebaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E435A2C6C8D6100A9D2BC /* TestFirebaseUITestsLaunchTests.swift */; };
+		A32E436F2C6C95DD00A9D2BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E436E2C6C95DD00A9D2BC /* ContentView.swift */; };
+		A32E437A2C6CBB1800A9D2BC /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E43792C6CBB1800A9D2BC /* SignInView.swift */; };
+		A32E437D2C6CBC5E00A9D2BC /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = A32E437C2C6CBC5E00A9D2BC /* Supabase */; };
+		A32E437F2C6CBF7E00A9D2BC /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E437E2C6CBF7E00A9D2BC /* AuthManager.swift */; };
+		A32E43812C6CC79300A9D2BC /* SignInApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E43802C6CC79300A9D2BC /* SignInApple.swift */; };
+		A38EF70B2C6F6001006592F2 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38EF70A2C6F6001006592F2 /* AppTextField.swift */; };
+		A38EF70D2C6F6261006592F2 /* AppSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38EF70C2C6F6261006592F2 /* AppSecureField.swift */; };
+		A38EF70F2C6F6533006592F2 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38EF70E2C6F6533006592F2 /* RegistrationView.swift */; };
+		A38EF7112C6F673A006592F2 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38EF7102C6F673A006592F2 /* SignInViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A31FFD152C6DC2D3006BD8C5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A32E433A2C6C8D6000A9D2BC /* TestFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32E433D2C6C8D6000A9D2BC /* TestFirebaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFirebaseApp.swift; sourceTree = "<group>"; };
-		A32E433F2C6C8D6000A9D2BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A32E43412C6C8D6100A9D2BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A32E43442C6C8D6100A9D2BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A32E434A2C6C8D6100A9D2BC /* TestFirebaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestFirebaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +53,15 @@
 		A32E43542C6C8D6100A9D2BC /* TestFirebaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestFirebaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32E43582C6C8D6100A9D2BC /* TestFirebaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFirebaseUITests.swift; sourceTree = "<group>"; };
 		A32E435A2C6C8D6100A9D2BC /* TestFirebaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFirebaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A32E436E2C6C95DD00A9D2BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A32E43792C6CBB1800A9D2BC /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		A32E437E2C6CBF7E00A9D2BC /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		A32E43802C6CC79300A9D2BC /* SignInApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInApple.swift; sourceTree = "<group>"; };
+		A32E43822C6D9F3200A9D2BC /* TestFirebase.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestFirebase.entitlements; sourceTree = "<group>"; };
+		A38EF70A2C6F6001006592F2 /* AppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
+		A38EF70C2C6F6261006592F2 /* AppSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecureField.swift; sourceTree = "<group>"; };
+		A38EF70E2C6F6533006592F2 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		A38EF7102C6F673A006592F2 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A32E437D2C6CBC5E00A9D2BC /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,10 +93,20 @@
 		A32E43312C6C8D6000A9D2BC = {
 			isa = PBXGroup;
 			children = (
+				A38EF7102C6F673A006592F2 /* SignInViewModel.swift */,
+				A38EF70E2C6F6533006592F2 /* RegistrationView.swift */,
+				A38EF70C2C6F6261006592F2 /* AppSecureField.swift */,
+				A38EF70A2C6F6001006592F2 /* AppTextField.swift */,
+				A31FFD152C6DC2D3006BD8C5 /* HomeView.swift */,
+				A32E43792C6CBB1800A9D2BC /* SignInView.swift */,
+				A32E43802C6CC79300A9D2BC /* SignInApple.swift */,
+				A32E437E2C6CBF7E00A9D2BC /* AuthManager.swift */,
+				A32E436E2C6C95DD00A9D2BC /* ContentView.swift */,
 				A32E433C2C6C8D6000A9D2BC /* TestFirebase */,
 				A32E434D2C6C8D6100A9D2BC /* TestFirebaseTests */,
 				A32E43572C6C8D6100A9D2BC /* TestFirebaseUITests */,
 				A32E433B2C6C8D6000A9D2BC /* Products */,
+				A32E437B2C6CBC5E00A9D2BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,8 +123,8 @@
 		A32E433C2C6C8D6000A9D2BC /* TestFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				A32E43822C6D9F3200A9D2BC /* TestFirebase.entitlements */,
 				A32E433D2C6C8D6000A9D2BC /* TestFirebaseApp.swift */,
-				A32E433F2C6C8D6000A9D2BC /* ContentView.swift */,
 				A32E43412C6C8D6100A9D2BC /* Assets.xcassets */,
 				A32E43432C6C8D6100A9D2BC /* Preview Content */,
 			);
@@ -127,6 +156,13 @@
 			path = TestFirebaseUITests;
 			sourceTree = "<group>";
 		};
+		A32E437B2C6CBC5E00A9D2BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +179,9 @@
 			dependencies = (
 			);
 			name = TestFirebase;
+			packageProductDependencies = (
+				A32E437C2C6CBC5E00A9D2BC /* Supabase */,
+			);
 			productName = TestFirebase;
 			productReference = A32E433A2C6C8D6000A9D2BC /* TestFirebase.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +254,9 @@
 				Base,
 			);
 			mainGroup = A32E43312C6C8D6000A9D2BC;
+			packageReferences = (
+				A32E43782C6CB21B00A9D2BC /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			productRefGroup = A32E433B2C6C8D6000A9D2BC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +299,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A32E43402C6C8D6000A9D2BC /* ContentView.swift in Sources */,
+				A32E43812C6CC79300A9D2BC /* SignInApple.swift in Sources */,
+				A32E437F2C6CBF7E00A9D2BC /* AuthManager.swift in Sources */,
 				A32E433E2C6C8D6000A9D2BC /* TestFirebaseApp.swift in Sources */,
+				A38EF70F2C6F6533006592F2 /* RegistrationView.swift in Sources */,
+				A38EF7112C6F673A006592F2 /* SignInViewModel.swift in Sources */,
+				A38EF70D2C6F6261006592F2 /* AppSecureField.swift in Sources */,
+				A31FFD162C6DC2D3006BD8C5 /* HomeView.swift in Sources */,
+				A38EF70B2C6F6001006592F2 /* AppTextField.swift in Sources */,
+				A32E437A2C6CBB1800A9D2BC /* SignInView.swift in Sources */,
+				A32E436F2C6C95DD00A9D2BC /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TestFirebase/TestFirebase.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TestFirebase/Preview Content\"";
@@ -448,6 +499,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TestFirebase/TestFirebase.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TestFirebase/Preview Content\"";
@@ -588,6 +640,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A32E43782C6CB21B00A9D2BC /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A32E437C2C6CBC5E00A9D2BC /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A32E43782C6CB21B00A9D2BC /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A32E43322C6C8D6000A9D2BC /* Project object */;
 }

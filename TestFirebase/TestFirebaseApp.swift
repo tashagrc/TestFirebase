@@ -11,7 +11,8 @@ import SwiftUI
 struct TestFirebaseApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(appUser: nil)
+        
         }
     }
 }
