@@ -15,8 +15,27 @@ struct HomeView: View {
             VStack {
                 Text(appUser.uid)
                 Text(appUser.email ?? "No email")
+                
+                
+                Button {
+                    Task {
+                        do {
+                            try await AuthManager.shared.signOut()
+                            self.appUser = nil
+                        } catch {
+                            print("unable to sign out")
+                        }
+                    }
+                    
+                } label: {
+                    Text("Sign out")
+                        .foregroundColor(.red)
+                }
+                
             }
         }
+        
+        
         
         
     }

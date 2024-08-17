@@ -60,6 +60,11 @@ class AuthManager {
         return AppUser(uid: session.user.id.uuidString, email: session.user.email)
     }
     
+    // MARK: Sign Out
+    func signOut() async throws {
+        try await client.auth.signOut()
+    }
+    
 }
 
 

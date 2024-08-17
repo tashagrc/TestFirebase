@@ -29,8 +29,8 @@ struct RegistrationView: View {
                         let appUser = try await viewModel.registerNewUserWithEmail(email: email, password: password)
                         self.appUser = appUser
                         dismiss.callAsFunction()
-                    } catch {
-                        print("issue with sign in ")
+                    } catch let error as NSError {
+                        print("register email failed with error: \(error.localizedDescription)")
                     }
                 }
             } label: {

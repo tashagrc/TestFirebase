@@ -28,8 +28,8 @@ struct SignInView: View {
                     do {
                         let appUser = try await viewModel.signInWithEmail(email: email, password: password)
                         self.appUser = appUser
-                    } catch {
-                        print("issue with sign in ")
+                    } catch let error as NSError {
+                        print("Sign in email failed with error: \(error.localizedDescription)")
                     }
                 }
             } label: {

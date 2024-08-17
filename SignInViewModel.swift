@@ -37,7 +37,7 @@ class SignInViewModel: ObservableObject {
     
     func signInWithEmail(email: String, password: String) async throws -> AppUser {
         if isFormValid(email: email, password: password) {
-            return try await AuthManager.shared.registerNewUserWithEmail(email: email, password: password)
+            return try await AuthManager.shared.signInWithEmail(email: email, password: password)
         } else {
             print("form is invalid")
             throw NSError()
